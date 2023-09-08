@@ -16,7 +16,7 @@ const client = new Client({
   ]
 })
 
-const TOKEN = process.env['TOKEN']
+const DISCORD_TOKEN = process.env['DISCORD_TOKEN']
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`)
@@ -51,4 +51,4 @@ client.on('messageCreate', async (message) => {
   }
 });
 
-client.login(TOKEN)
+client.login(DISCORD_TOKEN)
