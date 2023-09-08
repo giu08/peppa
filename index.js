@@ -5,7 +5,7 @@ import { OpenAI } from "openai"
 //I wanna die :)
 //Me too :D
 
-const openai = new OpenAI({ apiKey: process.env['OPENAI_TOKEN'] })
+const openai = new OpenAI({ apiKey: process.env.OPENAI_TOKEN })
 
 const client = new Client({
   intents: [
@@ -16,7 +16,7 @@ const client = new Client({
   ]
 })
 
-const DISCORD_TOKEN = process.env['DISCORD_TOKEN']
+const DISCORD_TOKEN = process.env.DISCORD_TOKEN
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`)
